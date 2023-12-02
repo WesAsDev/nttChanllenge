@@ -51,11 +51,6 @@ public with sharing class ScheduleInativeAccountsTest {
         Date oppLastDate = Date.today().addDays(-121);
 
         for(account acc: acclist){
-            system.debug(acc.name); 
-            system.debug(acc.inativa__c); 
-            system.debug(acc.opportunities); 
-            system.debug(acc.tasks); 
-
             for(Opportunity opportuni :acc.opportunities){
                 if((opportuni.closeDate > oppLastDate || oppLastDate == null) && opportuni.stageName == 'Closed Won'){
                     oppLastDate = opportuni.CloseDate;
@@ -104,10 +99,6 @@ public with sharing class ScheduleInativeAccountsTest {
         Date oppLastDate = Date.today().addDays(-121);
 
         for(account acc: acclist){
-            system.debug(acc.name); 
-            system.debug(acc.inativa__c); 
-            system.debug(acc.opportunities); 
-            system.debug(acc.tasks); 
 
             for(Opportunity opportuni :acc.opportunities){
                 if((opportuni.closeDate > oppLastDate || oppLastDate == null) && opportuni.stageName == 'Closed Won'){
@@ -155,11 +146,6 @@ public with sharing class ScheduleInativeAccountsTest {
         Date oppLastDate = Date.today().addDays(-121);
 
         for(account acc: acclist){
-            system.debug(acc.name); 
-            system.debug(acc.inativa__c); 
-            system.debug(acc.opportunities); 
-            system.debug(acc.tasks); 
-
             for(Opportunity opportuni :acc.opportunities){
                 if((opportuni.closeDate > oppLastDate || oppLastDate == null) && opportuni.stageName == 'Closed Won'){
                     oppLastDate = opportuni.CloseDate;
@@ -199,11 +185,6 @@ public with sharing class ScheduleInativeAccountsTest {
         Datetime tskLastDate = Datetime.now().addDays(-91);
 
         for(account acc: acclist){
-            system.debug(acc.name); 
-            system.debug(acc.inativa__c); 
-            system.debug(acc.opportunities); 
-            system.debug(acc.tasks); 
-
             for(task ts :acc.tasks){
 
                 if((ts.CreatedDate > tskLastDate || tskLastDate == null)){
@@ -246,10 +227,6 @@ public with sharing class ScheduleInativeAccountsTest {
         Datetime tskLastDate = Datetime.now().addDays(-91);
 
         for(account acc: acclist){
-            system.debug(acc.name); 
-            system.debug(acc.inativa__c); 
-            system.debug(acc.opportunities); 
-            system.debug(acc.tasks); 
 
             for(task ts :acc.tasks){
 
@@ -301,10 +278,6 @@ public with sharing class ScheduleInativeAccountsTest {
         Datetime oppLastDate = Datetime.now().addDays(-121);
 
         for(account acc: acclist){
-            system.debug(acc.name); 
-            system.debug(acc.inativa__c); 
-            system.debug(acc.opportunities); 
-            system.debug(acc.tasks); 
 
             for(task ts :acc.tasks){
 
@@ -362,11 +335,6 @@ public with sharing class ScheduleInativeAccountsTest {
         Datetime oppLastDate = Datetime.now().addDays(-121);
 
         for(account acc: acclist){
-            system.debug(acc.name); 
-            system.debug(acc.inativa__c); 
-            system.debug(acc.opportunities); 
-            system.debug(acc.tasks); 
-
             for(task ts :acc.tasks){
 
                 if((ts.CreatedDate > tskLastDate || tskLastDate == null)){
@@ -424,10 +392,6 @@ public with sharing class ScheduleInativeAccountsTest {
         Datetime oppLastDate = Datetime.now().addDays(-121);
 
         for(account acc: acclist){
-            system.debug(acc.name); 
-            system.debug(acc.inativa__c); 
-            system.debug(acc.opportunities); 
-            system.debug(acc.tasks); 
 
             for(task ts :acc.tasks){
 
@@ -484,10 +448,6 @@ public with sharing class ScheduleInativeAccountsTest {
         Datetime oppLastDate = Datetime.now().addDays(-121);
 
         for(account acc: acclist){
-            system.debug(acc.name); 
-            system.debug(acc.inativa__c); 
-            system.debug(acc.opportunities); 
-            system.debug(acc.tasks); 
 
             for(task ts :acc.tasks){
 
