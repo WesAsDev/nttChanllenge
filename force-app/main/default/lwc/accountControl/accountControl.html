@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <div class="form">
+            <lightning-record-edit-form class="formAtualizarConta" object-api-name="Account" record-id={recordId} onerror={errorHandler} onsuccess={successHandler}>
+                <lightning-input-field field-name="Name"> </lightning-input-field>
+                <lightning-input-field field-name="AccountNumber"> </lightning-input-field>
+                <lightning-input-field field-name="Type"></lightning-input-field>
+                <lightning-button
+                    type="submit"
+                    name="submit"
+                    label="Atualizar conta"
+                >
+                </lightning-button>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+
+    
+</template>
